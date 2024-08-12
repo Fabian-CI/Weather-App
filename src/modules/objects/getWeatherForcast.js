@@ -1,8 +1,9 @@
 export default function getWeatherForcast(forecastDay) {
     return {
-        location: forecastDay.resolvedAddress,
-        description: forecastDay.description,
-        datetime: forecastDay.days.datetime,
-
+        icon: forecastDay.icon,
+        temp: forecastDay.temp,
+        feelslike: forecastDay.feelslike,
+        
+        humidity: forecastDay.humidity
     }
 }

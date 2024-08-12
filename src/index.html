@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Weather App</title>
 </head>
 <body>
-    
+    <main>
+        <form action="">
+            <label for="location">
+                <span>
+                    <img 
+                    src="./assets/images/mark-location.svg"
+                    alt="Map marker" 
+                    class="svg-white"
+                    draggable="false"
+                    />
+                </span>
+                <input
+                 type="text"
+                 name="location"
+                 id="location"
+                 placeholder="Enter your location" 
+                 />
+            </label>
+
+            <button type="submit">
+                <img 
+                src="./assets/images/magnifying-glass.svg"
+                alt="Magnifying glass"
+                class="svg-white"
+                />
+            </button>
+        </form>
+
+        <div id="content">
+            <div class="pref-buttons">
+                <div class="preference">
+                    <button id="km">km/h</button>
+                    <button id="mi">mi/h</button>
+                </div>
+                
+                <div class="preference">
+                    <button id="C">°C</button>
+                    <button id="F">°F</button>
+                </div>
+            </div>
+
+            <div class="weather-temp">
+                <span>Sunny</span>
+                <h2>30°C</h2>
+                <p>Feels like 29°C</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            2024 © Built by
+            <a href="https://github.com/Fabian-CI" target="_blank">Fabian C.</a>
+        </p>
+        <p>
+            Powered by
+            <a href="https://www.visualcrossing.com/" title="Visaul Crossing" target="_blank">visualcrossing.com</a>
+        </p>
+    </footer>    
     <script defer type="module" src="./index.js"></script>
 </body>
 </html>
